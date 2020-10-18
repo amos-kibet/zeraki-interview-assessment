@@ -8,4 +8,4 @@ INSERT INTO course (name)
 
 SELECT institution.name, course.name, COUNT(*)
     FROM  institution, course, students
-    WHERE student.studentid = course.courseid AND student.studentid = institutionid
+    WHERE student.studentid = course.courseid AND student.studentid = institution.institutionid
